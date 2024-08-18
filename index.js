@@ -9,6 +9,9 @@ app.use(express.json());
 const port = 3000;
 
 const rootRouter = require("./routes/index");
+app.get("/",(req,res)=>{
+    res.json({"asjfoi":"fwef"});
+});
 app.use("/api/v1/", rootRouter);
 
 app.listen(port, () => {
